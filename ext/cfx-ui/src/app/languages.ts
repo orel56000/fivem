@@ -35,13 +35,17 @@ const languages = [
         name: 'ru',
         displayName: 'Русский'
     },
+	{
+        name: 'hw',
+        displayName: 'עברית'
+    },
 ];
 
 export class Languages {
     static toList() {
         return languages.map(({name}) => ({
             code: name,
-            dir: 'ltr'
+			dir: name == 'hw' ? 'rtl' : 'ltr'
         }));
     }
 
