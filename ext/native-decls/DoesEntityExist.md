@@ -5,7 +5,7 @@ apiset: server
 ## DOES_ENTITY_EXIST
 
 ```c
-BOOL DOES_ENTITY_EXIST(Object entity);
+BOOL DOES_ENTITY_EXIST(Entity entity);
 ```
 
 
